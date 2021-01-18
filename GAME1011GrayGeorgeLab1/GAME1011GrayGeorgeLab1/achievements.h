@@ -3,24 +3,22 @@
 #include <string>
 #include <iostream>
 
-
-class Platform {
+class Achievements {
 private:
 	std::string name;
-	std::string manufacturer;
-	int game;
+	std::string description;
+	int points;
 public:
-	Platform(std::string n, std::string m, int x) {
-		name = n;
-		manufacturer = m;
-		game = x;
-	}
 	std::string getName() {
 		return name;
 	}
-	std::string getManufactur() {
-		return manufacturer;
+	std::string getDesc() {
+		return description;
 	}
+	int getPoints() {
+		return points;
+	}
+
 };
 
 class Game {
@@ -28,13 +26,12 @@ private:
 	std::string title;
 	std::string publisher;
 	std::string developer;
-	int Plat;
+	Achievements* achievementsArr[];
 public:
 	Game(std::string t, std::string p, std::string d, int x) {
 		title = t;
 		publisher = p;
 		developer = d;
-		Plat = x;
 	}
 	std::string getTitle(){
 		return title;
@@ -45,15 +42,28 @@ public:
 	std::string getDev() {
 		return developer;
 	}
-	int getPlat() {
-		return Plat;
-	}
 };
-class Achievements {
-private:
 
+class Platform {
+private:
+	std::string name;
+	std::string manufacturer;
+	Game* gameArr;
 public:
+	Platform(std::string n, std::string m) {
+		name = n;
+		manufacturer = m;
+	}
+	std::string getName() {
+		return name;
+	}
+	std::string getManufactur() {
+		return manufacturer;
+	}
+	void addGame(Game*);
+	void addGameList(Game* []);
 };
+
 
 
 

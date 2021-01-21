@@ -8,6 +8,7 @@ private:
 	std::string publisher;
 	std::string developer;
 	Achievements* achievementsArr;
+	int numAchievements;
 public:
 	Game() {
 		title = "";
@@ -19,6 +20,7 @@ public:
 		publisher = p;
 		developer = d;
 	}
+	~Game() {};
 	std::string getTitle() {
 		return title;
 	}
@@ -29,8 +31,9 @@ public:
 		return developer;
 	}
 	/*void gameSelect(Platform p);*/
-	void addAchievement();
-	void initalizeAchievementList(int z);
+	//void addAchievement();
+	void getAchievementArr();
+	void initalizeAchievementList();
 };
 #pragma once
 

@@ -6,6 +6,7 @@ private:
 	std::string name;
 	std::string manufacturer;
 	Game* gameArr;
+	int numGames;
 public:
 	Platform() {
 		name = "";
@@ -15,18 +16,15 @@ public:
 		name = n;
 		manufacturer = m;
 	}
-	void setName() {
-
-	}
 	std::string getName() {
 		return name;
 	}
 	std::string getManu() {
 		return manufacturer;
 	}
-	void getGameArray(int x);
+	void getGameArray();
 	//void gameSelect();
-	void platSelect();
+	//void platSelect();
 	void initalizeGameList(int y);
 };
 

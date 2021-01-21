@@ -24,16 +24,16 @@ void Platform::getGameArray(int x) {
 	int game;
 	int numAchieve;
 	std::cout << "Which game would you like to create achievements for?\n";
-	for (int i = 0; i < x; i++) {
+	for (unsigned int i = 0; i < x; i++) {
 		std::cout << i << ". " << gameArr[i].getTitle() << ", developed by " << gameArr[i].getDev() << ", Produced by " << gameArr[i].getPub() << ".\n";
 	}
 	std::cin >> game;
 	std::cout << "How many Achievements would you like to make?\n";
 	std::cin >> numAchieve;
 }
-void Platform::gameSelect() {
-	this->gameArr;
-}
+//void Platform::gameSelect() {
+//	this->gameArr;
+//}
 //void Platform::addGame(int s, Game g) {
 //	for (unsigned int i = 0; i < s; i++) {
 //		
@@ -56,7 +56,7 @@ void Platform::platSelect() {
 	case 1: {
 		std::cout << "How many games would you like to add?\n";
 		std::cin >> numGames;
-		initalizeGameList(numGames);
+		nSwitch.initalizeGameList(numGames);
 		nSwitch.getGameArray(numGames);
 		/*init.gameSelect(nSwitch);*/
 	}

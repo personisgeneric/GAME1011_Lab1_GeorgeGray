@@ -28,9 +28,9 @@ public:
 	std::string getDev() {
 		return developer;
 	}
-	/*void gameSelect(Platform p);
-	void addAchievement(Achievements* arr);
-	void initalizeAchievementList(int x);*/
+	/*void gameSelect(Platform p);*/
+	void addAchievement();
+	void initalizeAchievementList(int x);
 };
 #pragma once
 

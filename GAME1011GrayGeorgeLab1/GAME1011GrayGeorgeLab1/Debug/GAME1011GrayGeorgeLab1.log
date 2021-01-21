@@ -1,3 +1,5 @@
-﻿  Platform.cpp
-C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\GAME1011GrayGeorgeLab1\Platform.cpp(27,29): warning C4018: '<': signed/unsigned mismatch
+﻿  Game.cpp
+  Platform.cpp
+C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\GAME1011GrayGeorgeLab1\Platform.cpp(28,29): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   GAME1011GrayGeorgeLab1.vcxproj -> C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\Debug\GAME1011GrayGeorgeLab1.exe

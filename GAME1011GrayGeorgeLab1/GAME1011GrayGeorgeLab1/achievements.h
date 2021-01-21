@@ -11,6 +11,11 @@ public:
 		description = "";
 		points = 0;
 	}
+	Achievements(std::string n, std::string d, int p) {
+		name = n;
+		description = d;
+		points = p;
+	}
 	std::string getName() {
 		return name;
 	}

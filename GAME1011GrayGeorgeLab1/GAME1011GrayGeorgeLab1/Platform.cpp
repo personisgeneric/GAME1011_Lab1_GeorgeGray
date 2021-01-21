@@ -21,15 +21,17 @@ void Platform::initalizeGameList(int x) {
 	}
 }
 void Platform::getGameArray(int x) {
+	Game init;
 	int game;
 	int numAchieve;
 	std::cout << "Which game would you like to create achievements for?\n";
 	for (unsigned int i = 0; i < x; i++) {
-		std::cout << i << ". " << gameArr[i].getTitle() << ", developed by " << gameArr[i].getDev() << ", Produced by " << gameArr[i].getPub() << ".\n";
+		std::cout << (i+1) << ". " << gameArr[i].getTitle() << ", developed by " << gameArr[i].getDev() << ", Produced by " << gameArr[i].getPub() << ".\n";
 	}
 	std::cin >> game;
 	std::cout << "How many Achievements would you like to make?\n";
 	std::cin >> numAchieve;
+	init.initalizeAchievementList(numAchieve);
 }
 //void Platform::gameSelect() {
 //	this->gameArr;

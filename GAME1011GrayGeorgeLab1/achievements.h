@@ -2,37 +2,45 @@
 #include <string>
 class Achievements {
 private:
-	std::string name;
-	std::string description;
-	int points;
+	std::string m_name;
+	std::string m_description;
+	int m_points;
 public:
-	Achievements() {
-		name = "";
-		description = "";
-		points = 0;
+	Achievements() 
+	{
+		m_name = "";
+		m_description = "";
+		m_points = 0;
 	}
-	Achievements(std::string n, std::string d, int p) {
-		name = n;
-		description = d;
-		points = p;
+	Achievements(std::string n, std::string d, int p) 
+	{
+		m_name = n;
+		m_description = d;
+		m_points = p;
 	}
-	std::string getName() {
-		return name;
+	std::string getName() 
+	{
+		return m_name;
 	}
-	std::string getDesc() {
-		return description;
+	std::string getDesc() 
+	{
+		return m_description;
 	}
-	int getPoints() {
-		return points;
+	int getPoints() 
+	{
+		return m_points;
 	}
-	void setPoints(int p) {
-		points = p;
+	void setPoints(int p) 
+	{
+		m_points = p;
 	}
-	void setName(std::string n) {
-		name = n;
+	void setName(std::string n)
+	{
+		m_name = n;
 	}
-	void setDesc(std::string d) {
-		description = d;
+	void setDesc(std::string d) 
+	{
+		m_description = d;
 	}
 
 };

@@ -5,12 +5,14 @@
 std::string placeholderName, placeholderDesc;
 int placeholderPoints;
 int numAchieve;
-void Game::initalizeAchievementList() {
+void Game::initalizeAchievementList() 
+{
 	
 	std::cout << "How many Achievements would you like to make?\n";
 	std::cin >> numAchieve;
-	achievementsArr = new Achievements[numAchieve];
-	for (unsigned int i = 0; i < numAchieve; i++) {
+	m_pAchievementsArr = new Achievements[numAchieve];
+	for (unsigned int i = 0; i < numAchieve; i++) 
+	{
 		
 		std::cout << "Please enter a Name, Description for the Achievement, and number of points for the achievements\nName: ";
 		std::cin >> placeholderName;
@@ -18,13 +20,15 @@ void Game::initalizeAchievementList() {
 		std::cin >> placeholderDesc;
 		std::cout << "Points: ";
 		std::cin >> placeholderPoints;
-		achievementsArr[i] = Achievements(placeholderName, placeholderDesc, placeholderPoints);
+		m_pAchievementsArr[i] = Achievements(placeholderName, placeholderDesc, placeholderPoints);
 	}
-	numAchievements = numAchieve;
+	m_numAchievements = numAchieve;
 }
-void Game::getAchievementArr() {
-	for (unsigned int j = 0; j < numAchievements; j++) {
-		std::cout << "Achievement: " << achievementsArr[j].getName() << ", achieved by " << achievementsArr[j].getDesc() << ", worth " << achievementsArr[j].getPoints() << " points.\n";
+void Game::getAchievementArr() 
+{
+	for (unsigned int j = 0; j < m_numAchievements; j++) 
+	{
+		std::cout << "Achievement: " << m_pAchievementsArr[j].getName() << ", achieved by " << m_pAchievementsArr[j].getDesc() << ", worth " << m_pAchievementsArr[j].getPoints() << " points.\n";
 	
 	}
 }

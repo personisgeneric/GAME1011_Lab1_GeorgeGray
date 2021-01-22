@@ -6,9 +6,11 @@ std::string placeholderTitle, placeholderDeveloper, placeholderProducer;
 
 
 
-void Platform::initalizeGameList(int y) {
+void Platform::initalizeGameList(int y) 
+{
 	gameArr = new Game[y];
-	for ( int i = 0; i < y; i++) {
+	for ( int i = 0; i < y; i++) 
+	{
 		std::cout << "Please enter a Title, Developer, and Producer for the game you want to add.\nTitle: ";
 		std::cin >> placeholderTitle;
 		std::cout << "Developer: ";
@@ -21,8 +23,10 @@ void Platform::initalizeGameList(int y) {
 	}
 	numGames = y;
 }
-void Platform::getGameArray() {
-	for (unsigned int i = 0; i < numGames; i++) {
+void Platform::getGameArray() 
+{
+	for (unsigned int i = 0; i < numGames; i++) 
+	{
 		std::cout << "Game: " << gameArr[i].getTitle() << ", developed by " << gameArr[i].getDev() << ", Produced by " << gameArr[i].getPub() << ".\n";
 		gameArr[i].getAchievementArr();
 	}

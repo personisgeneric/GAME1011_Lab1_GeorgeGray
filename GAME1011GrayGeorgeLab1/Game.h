@@ -4,31 +4,31 @@
 
 class Game {
 private:
-	std::string title;
-	std::string publisher;
-	std::string developer;
-	Achievements* achievementsArr;
-	int numAchievements;
+	std::string m_title;
+	std::string m_publisher;
+	std::string m_developer;
+	Achievements* m_pAchievementsArr;
+	int m_numAchievements;
 public:
 	Game() {
-		title = "";
-		publisher = "";
-		developer = "";
+		m_title = "";
+		m_publisher = "";
+		m_developer = "";
 	}
 	Game(std::string t, std::string p, std::string d) {
-		title = t;
-		publisher = p;
-		developer = d;
+		m_title = t;
+		m_publisher = p;
+		m_developer = d;
 	}
 	~Game() {};
 	std::string getTitle() {
-		return title;
+		return m_title;
 	}
 	std::string getPub() {
-		return publisher;
+		return m_publisher;
 	}
 	std::string getDev() {
-		return developer;
+		return m_developer;
 	}
 	/*void gameSelect(Platform p);*/
 	//void addAchievement();

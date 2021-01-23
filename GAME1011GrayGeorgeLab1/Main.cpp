@@ -15,7 +15,7 @@ void initalizePlatformList(int x)
 	{
 		std::cout << "Please enter a Platform and Manufacturer.\nPlatform: ";
 		std::cin >> placeholderConsole;
-		std::cout << "\n Manufacturer: ";
+		std::cout << "Manufacturer: ";
 		std::cin >> placeholderManu;
 		pPlatformArr[i] = Platform (placeholderConsole, placeholderManu);
 		std::cout << "Please enter the number of games you want.\n";
@@ -28,13 +28,11 @@ void getPlatformArray()
 {
 	for (unsigned int i = 0; i < numPlatforms; i++) 
 	{
+		std::cout << "===================================\n===================================\n";
 		std::cout << "Platform: " << pPlatformArr[i].getName() << ", manufactured by " << pPlatformArr[i].getManu() << ".\n";
 		pPlatformArr[i].getGameArray();
 	}
-
-
 }
-
 int main()
 {
 	int numPlats;

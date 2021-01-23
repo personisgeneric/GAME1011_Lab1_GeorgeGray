@@ -29,8 +29,8 @@ void Game::getAchievementArr()
 	for (unsigned int j = 0; j < m_numAchievements; j++) 
 	{
 		std::cout << "Achievement: " << m_pAchievementsArr[j].getName() << ", achieved by " << m_pAchievementsArr[j].getDesc() << ", worth " << m_pAchievementsArr[j].getPoints() << " points.\n";
-	
 	}
+	
 }
 
 

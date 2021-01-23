@@ -15,9 +15,9 @@ void Game::initalizeAchievementList()
 	{
 		
 		std::cout << "Please enter a Name, Description for the Achievement, and number of points for the achievements\nName: ";
-		std::cin >> placeholderName;
+		std::getline(std::cin >> std::ws, placeholderName);
 		std::cout << "Description: ";
-		std::cin >> placeholderDesc;
+		std::getline(std::cin >> std::ws, placeholderDesc);
 		std::cout << "Points: ";
 		std::cin >> placeholderPoints;
 		m_pAchievementsArr[i] = Achievements(placeholderName, placeholderDesc, placeholderPoints);

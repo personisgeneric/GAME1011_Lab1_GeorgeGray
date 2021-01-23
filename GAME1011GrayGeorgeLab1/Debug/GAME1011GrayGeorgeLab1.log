@@ -2,6 +2,8 @@
 C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\GAME1011GrayGeorgeLab1\Game.cpp(14,29): warning C4018: '<': signed/unsigned mismatch
 C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\GAME1011GrayGeorgeLab1\Game.cpp(29,29): warning C4018: '<': signed/unsigned mismatch
   Main.cpp
-C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\GAME1011GrayGeorgeLab1\Main.cpp(29,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\GAME1011GrayGeorgeLab1\Main.cpp(28,29): warning C4018: '<': signed/unsigned mismatch
+  Platform.cpp
+C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\GAME1011GrayGeorgeLab1\Platform.cpp(28,29): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
   GAME1011GrayGeorgeLab1.vcxproj -> C:\Users\geo_g\source\repos\GAME1011GrayGeorgeLab1\Debug\GAME1011GrayGeorgeLab1.exe

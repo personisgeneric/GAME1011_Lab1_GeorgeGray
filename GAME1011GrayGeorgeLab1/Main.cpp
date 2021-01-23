@@ -10,13 +10,12 @@ void initalizePlatformList(int x)
 {
 	pPlatformArr = new Platform[x];
 	int numGames;
-
 	for ( int i = 0; i < x; i++)
 	{
 		std::cout << "Please enter a Platform and Manufacturer.\nPlatform: ";
-		std::cin >> placeholderConsole;
+		std::getline(std::cin >> std::ws, placeholderConsole);
 		std::cout << "Manufacturer: ";
-		std::cin >> placeholderManu;
+		std::getline(std::cin >> std::ws, placeholderManu);
 		pPlatformArr[i] = Platform (placeholderConsole, placeholderManu);
 		std::cout << "Please enter the number of games you want.\n";
 		std::cin >> numGames;

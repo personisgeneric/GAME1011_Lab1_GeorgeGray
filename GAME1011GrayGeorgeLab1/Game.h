@@ -15,10 +15,10 @@ public:
 		m_publisher = "";
 		m_developer = "";
 	}
-	Game(std::string t, std::string p, std::string d) {
+	Game(std::string t, std::string d, std::string p) {
 		m_title = t;
-		m_publisher = p;
 		m_developer = d;
+		m_publisher = p;
 	}
 	~Game() {};
 	std::string getTitle() {
